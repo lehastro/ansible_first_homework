@@ -19,21 +19,21 @@
       path: "/var/www/html/index.html"
       state: absent
 
-  - name: open ports
+  - name: close ports
     firewalld:
       port: 80/tcp
       immediate: yes
       permanent: yes
       state: disabled
 
-  - name: open ports
+  - name: close ports
     firewalld:
       port: 22/tcp
       immediate: yes
       permanent: yes
       state: disabled
 
-  - name: open ports
+  - name: close ports
     firewalld:
       port: 111/tcp
       immediate: yes
