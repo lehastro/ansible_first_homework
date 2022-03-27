@@ -1,6 +1,6 @@
 ---
 - name: playbook_2
-  hosts: nodes
+  hosts: node1.example.com, node2.example.com
   user: ansible
   become: yes
   become_method: sudo
